@@ -12,7 +12,7 @@
   justify-content: center; }
   .container .bar {
     border: 1px solid black;
-    height: 200px;
+    height: 100px;
     width: 150px;
     background: red;
     margin-left: 60px;
@@ -48,6 +48,16 @@
   background: rgba(255, 255, 255, 0.6);
   margin: 0 auto; }
 
+.current-score {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+  z-index: 50;
+  display: none; }
+
 .start-game, .good-game {
   position: absolute;
   left: 50%;
@@ -65,5 +75,31 @@
 
 .good-game {
   display: none; }
+
+.deadline {
+  position: absolute;
+  bottom: 700px;
+  width: 100%;
+  left: 0;
+  background: orange;
+  height: 150px;
+  z-index: 20; }
+  .deadline p {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 50px;
+    line-height: 50px;
+    color: black;
+    font-weight: bold; }
+
+.level {
+  position: absolute;
+  font-size: 40px;
+  color: aqua;
+  text-align: center;
+  display: none;
+  top: 50px;
+  z-index: 99;
+  font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
