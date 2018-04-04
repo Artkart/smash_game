@@ -6,44 +6,36 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-    <div class="current-score" id="currentScore">
-0
+  <div class="current-score" id="currentScore">
+    0
   </div>
-
   <div class="deadline">
-<p>GAME OVER!!!</p>
+    <p>CRASH!!!</p>
   </div>
-
-  <div class="level" id="levelUp">  1  </div>
-
-      <div class="container">
-            <div class="bar" id="minion1" onclick="smashMinion('minion1')">
-              <p class="barName">A</p>
-              <div class="eye1"> </div>
-              <div class="eye2"> </div>
-
-            </div>
-
-            <div class="bar" id="minion2" onclick="smashMinion('minion2')">
-              <p class="barName">B</p>
-              <div class="eye1"> </div>
-              <div class="eye2"> </div>
-            </div>
-
-            <div class="bar" id="minion3" onclick="smashMinion('minion3')">
-              <p class="barName">C</p>
-              <div class="eye1"> </div>
-              <div class="eye2"> </div>
-            </div>
-        </div>
-
-
-
+  <div class="level" id="levelUp">
+    1
+  </div>
+  <div class="container">
+    <div class="bar" id="minion1" onclick="smashMinion('minion1')">
+      <div class="formula">
+          <img src="ferrari.jpg" alt="">
+      </div>
+    </div>
+    <div class="bar" id="minion2" onclick="smashMinion('minion2')">
+      <div class="formula">
+          <img src="amg.jpg" alt="">
+      </div>
+    </div>
+    <div class="bar" id="minion3" onclick="smashMinion('minion3')">
+      <div class="formula">
+          <img src="redbull.jpg" alt="">
+      </div>
+    </div>
+  </div>
         <div class="overflow" id="gameHover">
-
           <div class="start-game" id="startBlock">
             <h2>New game</h2>
+            <p>Save your F1 team by pressing on Formula, to avoid crashing it in to the wall</p>
             <button type="button" name="button" onclick="startGame()">Start</button>
           </div>
 
@@ -53,8 +45,6 @@
           </div>
 
         </div>
-
-
 
   </body>
   <script type="text/javascript" src="js.js">

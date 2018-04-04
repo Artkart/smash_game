@@ -1,8 +1,10 @@
+body {
+  height: 800px; }
+
 .container {
   margin: 0;
   display: -webkit-flex;
   display: flex;
-  background-color: #3b5998;
   bottom: 0;
   top: 0;
   left: 0;
@@ -11,32 +13,21 @@
   position: absolute;
   justify-content: center; }
   .container .bar {
-    border: 1px solid black;
-    height: 100px;
-    width: 150px;
-    background: red;
-    margin-left: 60px;
-    margin-right: 60px;
+    height: 130px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-left: 200px;
+    margin-right: 200px;
     justify-content: center;
     position: relative; }
     .container .bar .barName {
       text-align: center; }
-    .container .bar .eye1 {
+    .container .bar .formula img {
+      width: 200px;
+      height: 130px;
       position: absolute;
-      width: 30px;
-      height: 30px;
-      background: white;
-      top: 40px;
-      left: 20px;
-      border-radius: 50px; }
-    .container .bar .eye2 {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      background: white;
-      top: 40px;
-      right: 20px;
-      border-radius: 50px; }
+      right: -80px;
+      border-radius: 50px 50px; }
 
 .overflow {
   position: absolute;
@@ -78,11 +69,11 @@
 
 .deadline {
   position: absolute;
-  bottom: 700px;
+  top: 0;
   width: 100%;
   left: 0;
-  background: orange;
-  height: 150px;
+  background: url("brick.jpg");
+  height: 200px;
   z-index: 20; }
   .deadline p {
     text-align: center;
@@ -101,5 +92,8 @@
   top: 50px;
   z-index: 99;
   font-weight: bold; }
+
+#startBlock {
+  padding: 3%; }
 
 /*# sourceMappingURL=style.css.map */

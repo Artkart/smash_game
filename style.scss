@@ -1,62 +1,40 @@
+body {
+  height: 800px;
+}
 .container {
-  margin: 0;
-
-
-  display: -webkit-flex;
+   margin: 0;
+   display: -webkit-flex;
    display: flex;
-
-   background-color: rgba( 59, 89, 152, 1);
+  //  background-color: rgba( 59, 89, 152, 1);
    bottom: 0;
    top: 0;
    left: 0;
    right: 0;
-
    align-items: flex-end;
    position: absolute;
    justify-content: center;
 
-
-
-
 .bar{
-  border: 1px solid black;
-  height: 100px;
-  width: 150px;
-  background: red;
-  margin-left: 60px;
-  margin-right: 60px;
+  // border: 1px solid black;
+  height: 130px;
+  width: 50px;
+  background: rgba(0,0,0,0.3);
+  margin-left: 200px;
+  margin-right: 200px;
   justify-content: center;
   position: relative;
-
-
   .barName {
     text-align: center;
     }
-
-    .eye1 {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      background: white;
-      top: 40px;
-      left: 20px;
-      border-radius: 50px;
-        }
-
-        .eye2 {
+        .formula img{
+          width: 200px;
+          height: 130px;
           position: absolute;
-          width: 30px;
-          height: 30px;
-          background: white;
-          top: 40px;
-          right: 20px;
-          border-radius: 50px;
-            }
-
-
+          right: -80px;
+          border-radius: 50px 50px;
+        }
   }
 }
-
 .overflow {
   position: absolute;
   z-index: 998;
@@ -67,7 +45,6 @@
   background: rgba(255, 255, 255, 0.6);
   margin: 0 auto;
 }
-
 .current-score {
   position: absolute;
   right: 20px;
@@ -78,9 +55,6 @@
   z-index: 50;
   display: none;
 }
-
-
-
 .start-game, .good-game {
   position: absolute;
   left: 50%;
@@ -102,11 +76,12 @@
 
 .deadline {
   position: absolute;
-  bottom: 700px;
+  // bottom: 700px;
+  top: 0;
   width: 100%;
   left: 0;
-  background: orange;
-  height: 150px;
+  background: url('brick.jpg');
+  height: 200px;
   z-index: 20;
 
   p {
@@ -118,7 +93,6 @@
   font-weight: bold;
   }
 }
-
 .level {
   position: absolute;
   font-size: 40px;
@@ -129,4 +103,7 @@
   top: 50px;
   z-index: 99;
   font-weight: bold;
+}
+#startBlock {
+  padding: 3%;
 }
